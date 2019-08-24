@@ -1,5 +1,5 @@
 {
-  "name": "@viva-ui/alert",
+  "name": "@nbsaw/alert",
   "version": "0.0.1",
   "description": "> TODO: description",
   "author": "yuxino <nbsawz@gmail.com>",
@@ -20,5 +20,6 @@
   "scripts": {},
   "bugs": {
     "url": "https://github.com/yuxino/viva-ui/issues"
-  }
+  },
+  "gitHead": "3bb67ca484f61391b6aa435d9209efb4d5e9cc77"
 }
