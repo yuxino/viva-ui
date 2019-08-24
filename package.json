@@ -1,6 +1,5 @@
 {
   "name": "@viva-ui/root",
-  "private": true,
   "workspaces": [
     "packages/*"
   ],
