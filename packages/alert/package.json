@@ -5,9 +5,9 @@
   "author": "yuxino <nbsawz@gmail.com>",
   "homepage": "https://github.com/yuxino/viva-ui#readme",
   "license": "ISC",
-  "main": "lib/alert.js",
+  "main": "dist/alert.js",
   "directories": {
-    "lib": "lib",
+    "dist": "dist",
     "test": "__tests__"
   },
   "files": [

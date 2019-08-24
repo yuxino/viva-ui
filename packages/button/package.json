@@ -5,9 +5,9 @@
   "author": "yuxino <nbsawz@gmail.com>",
   "homepage": "https://github.com/yuxino/viva-ui#readme",
   "license": "ISC",
-  "main": "lib/button.js",
+  "main": "dist/button.js",
   "directories": {
-    "lib": "lib",
+    "dist": "dist",
     "test": "__tests__"
   },
   "files": [
