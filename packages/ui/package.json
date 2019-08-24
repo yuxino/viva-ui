@@ -5,13 +5,13 @@
   "author": "yuxino <nbsawz@gmail.com>",
   "homepage": "https://github.com/yuxino/viva-ui/tree/master/packages/ui#readme",
   "license": "ISC",
-  "main": "lib/ui.js",
+  "main": "dist/ui.js",
   "directories": {
-    "lib": "lib",
+    "dist": "dist",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "dist"
   ],
   "repository": {
     "type": "git",
