@@ -1,5 +1,5 @@
 {
-  "name": "root",
+  "name": "@viva-ui/root",
   "private": true,
   "workspaces": [
     "packages/*"
@@ -26,5 +26,21 @@
   },
   "dependencies": {
     "@storybook/react": "^5.1.11"
-  }
+  },
+  "description": "",
+  "version": "1.0.0",
+  "main": "babel.config.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuxino/viva-ui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuxino/viva-ui/issues"
+  },
+  "homepage": "https://github.com/yuxino/viva-ui#readme"
 }
