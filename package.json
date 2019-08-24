@@ -1,7 +1,30 @@
 {
   "name": "root",
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
-    "lerna": "^3.16.4"
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-loader": "^8.0.6",
+    "fs-extra": "^8.1.0",
+    "lerna": "^3.16.4",
+    "rollup": "^1.20.1",
+    "rollup-plugin-babel": "^4.3.3"
+  },
+  "peerDependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "scripts": {
+    "build": "rollup -c ./roullup.config.js",
+    "storybook": "start-storybook"
+  },
+  "dependencies": {
+    "@storybook/react": "^5.1.11"
   }
 }
