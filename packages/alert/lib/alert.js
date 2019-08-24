@@ -1,7 +1,5 @@
-'use strict';
+"use strict";
 
-module.exports = alert;
-
-function alert() {
-    // TODO
+export default function() {
+  console.log("123");
 }

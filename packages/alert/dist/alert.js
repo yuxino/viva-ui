@@ -1,6 +1,7 @@
 'use strict';
 
-module.exports = alert;
-
-function alert() {// TODO
+function alert () {
+  console.log("123");
 }
+
+module.exports = alert;

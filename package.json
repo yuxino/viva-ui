@@ -1,8 +1,5 @@
 {
   "name": "@viva-ui/root",
-  "workspaces": [
-    "packages/*"
-  ],
   "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
@@ -21,7 +18,8 @@
   },
   "scripts": {
     "build": "rollup -c ./roullup.config.js",
-    "storybook": "start-storybook"
+    "storybook": "start-storybook",
+    "pub": "lerna publish -- --access public"
   },
   "dependencies": {
     "@storybook/react": "^5.1.11"

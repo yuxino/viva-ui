@@ -1,11 +1,11 @@
 {
-  "name": "@viva-ui/button",
+  "name": "ui",
   "version": "1.0.0",
-  "description": "viva-ui button",
+  "description": "the ui repo",
   "author": "yuxino <nbsawz@gmail.com>",
-  "homepage": "https://github.com/yuxino/viva-ui#readme",
+  "homepage": "https://github.com/yuxino/viva-ui/tree/master/packages/ui#readme",
   "license": "ISC",
-  "main": "lib/button.js",
+  "main": "lib/ui.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -17,16 +17,14 @@
     "type": "git",
     "url": "git+https://github.com/yuxino/viva-ui.git"
   },
-  "scripts": {},
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
   "bugs": {
     "url": "https://github.com/yuxino/viva-ui/issues"
   },
-  "publishConfig": {
-    "access": "public"
-  },
-  "gitHead": "30e0af230f19fe73e7759181dc016fa39c459933",
   "dependencies": {
     "@viva-ui/alert": "^1.0.0",
-    "alert": "^1.0.0"
+    "@viva-ui/button": "^1.0.0"
   }
 }
