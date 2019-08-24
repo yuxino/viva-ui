@@ -24,9 +24,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "30e0af230f19fe73e7759181dc016fa39c459933",
+  "gitHead": "aabc03bdcf1e27787d112c1f9d1ac7023fa578d4",
   "dependencies": {
-    "@viva-ui/alert": "^1.0.1",
-    "alert": "^1.0.0"
+    "@viva-ui/alert": "^1.0.1"
   }
 }

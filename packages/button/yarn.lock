@@ -2,6 +2,22 @@
 # yarn lockfile v1
 
 
+"@viva-ui/alert@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@viva-ui/alert/-/alert-1.0.1.tgz#a4dab210c19ad7ec7f1020960ccc418705d68f57"
+  integrity sha512-R/wWZ1ajFn4DYT4KMqRpFmfz39GUOWb6HTbrP0PMsYM7VH0yKOmJ1TCqUzFyQtA4ZcSwVV1pWo0/kzUN7ffTcQ==
+  dependencies:
+    "@viva-ui/button" "^1.0.1"
+    alert "^1.0.0"
+
+"@viva-ui/button@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@viva-ui/button/-/button-1.0.1.tgz#c4fee383898c95e8e7026dab4f9ce97b8ff3272f"
+  integrity sha512-e9fb3ZUQBmirRbuRGq9cpfoOQp/LEy8jZDVDXHt80RES6QPCZgXi0d6P5CyGOmn5vhfZAtkB+7wsAcp7bDPF/A==
+  dependencies:
+    "@viva-ui/alert" "^1.0.1"
+    alert "^1.0.0"
+
 alert@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/alert/-/alert-1.0.0.tgz#0d589fc17b4e6014f519e73311f5414c8738ee6a"

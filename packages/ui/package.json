@@ -1,5 +1,5 @@
 {
-  "name": "ui",
+  "name": "@viva-ui/ui",
   "version": "1.0.1",
   "description": "the ui repo",
   "author": "yuxino <nbsawz@gmail.com>",
@@ -26,5 +26,6 @@
   "dependencies": {
     "@viva-ui/alert": "^1.0.1",
     "@viva-ui/button": "^1.0.1"
-  }
+  },
+  "gitHead": "aabc03bdcf1e27787d112c1f9d1ac7023fa578d4"
 }
