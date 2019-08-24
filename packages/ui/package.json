@@ -1,6 +1,6 @@
 {
   "name": "ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "the ui repo",
   "author": "yuxino <nbsawz@gmail.com>",
   "homepage": "https://github.com/yuxino/viva-ui/tree/master/packages/ui#readme",
@@ -24,7 +24,7 @@
     "url": "https://github.com/yuxino/viva-ui/issues"
   },
   "dependencies": {
-    "@viva-ui/alert": "^1.0.0",
-    "@viva-ui/button": "^1.0.0"
+    "@viva-ui/alert": "^1.0.1",
+    "@viva-ui/button": "^1.0.1"
   }
 }
