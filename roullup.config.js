@@ -2,7 +2,6 @@ import fs from "fs-extra";
 import path from "path";
 
 // rollup config
-import babel from "rollup-plugin-babel";
 import typescript from "rollup-plugin-typescript";
 
 const resolve = path.resolve;
@@ -25,7 +24,8 @@ const configBuilder = async () => {
       return {
         input,
         output,
-        plugins: [typescript(), babel({ exclude: "node_modules/**" })]
+        plugins: [typescript()],
+        external: ["react", "react-dom"]
       };
     });
   return configs;

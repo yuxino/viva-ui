@@ -5,16 +5,11 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "@babel/preset-react": "^7.0.0",
-    "babel-core": "7.0.0-bridge.0",
     "babel-loader": "^8.0.6",
     "fs-extra": "^8.1.0",
     "lerna": "^3.16.4",
     "rollup": "^1.20.1",
-    "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-typescript": "^1.0.1",
     "typescript": "^3.5.3",
     "typings": "^2.1.1"
