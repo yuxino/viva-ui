@@ -15,7 +15,7 @@ const configBuilder = async () => {
     .map(pkgName => {
       const pkgDir = resolve(PACKAGE_PATH, pkgName);
       // input dir
-      const input = resolve(pkgDir, `lib/${pkgName}.js`);
+      const input = resolve(pkgDir, `lib/${pkgName}.ts`);
       // output config build
       const output = {
         file: resolve(pkgDir, `dist/${pkgName}.js`),
