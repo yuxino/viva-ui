@@ -4,6 +4,9 @@
 # Dist
 dist
 
+# roullup
+.rpt2_cache
+
 # Logs
 logs
 *.log

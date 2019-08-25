@@ -10,7 +10,8 @@
     "fs-extra": "^8.1.0",
     "lerna": "^3.16.4",
     "rollup": "^1.20.1",
-    "rollup-plugin-typescript": "^1.0.1",
+    "rollup-plugin-commonjs": "^10.0.2",
+    "rollup-plugin-typescript2": "^0.23.0",
     "typescript": "^3.5.3",
     "typings": "^2.1.1"
   },
@@ -21,6 +22,7 @@
   "scripts": {
     "build": "rollup -c ./roullup.config.js",
     "watch": "yarn build -- -w",
+    "clean-build": "node ./scripts/clean-build",
     "storybook": "start-storybook",
     "pub": "lerna publish -- --access public"
   },

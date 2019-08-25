@@ -2,7 +2,8 @@ import fs from "fs-extra";
 import path from "path";
 
 // rollup config
-import typescript from "rollup-plugin-typescript";
+import commonjs from "rollup-plugin-commonjs";
+import typescript from "rollup-plugin-typescript2";
 
 const resolve = path.resolve;
 
@@ -24,7 +25,7 @@ const configBuilder = async () => {
       return {
         input,
         output,
-        plugins: [typescript()],
+        plugins: [typescript(), commonjs()],
         external: ["react", "react-dom"]
       };
     });

@@ -1,3 +1,3 @@
-import Alert from "./alert";
-
-export default Alert;
+export default function() {
+  return "hello world";
+}

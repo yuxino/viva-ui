@@ -4,9 +4,9 @@
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
     "jsx": "react",
-    "module": "commonjs",
+    "module": "ES2015",
     "moduleResolution": "node",
-    "noImplicitAny": true,
+    // "noImplicitAny": true,
     "outDir": "./dist",
     "preserveConstEnums": true,
     "target": "es5"
