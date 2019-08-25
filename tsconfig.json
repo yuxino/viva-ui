@@ -7,9 +7,11 @@
     "module": "ES2015",
     "moduleResolution": "node",
     // "noImplicitAny": true,
-    "outDir": "./dist",
     "preserveConstEnums": true,
-    "target": "es5"
+    "target": "es5",
+    // "declaration": true,
+    "sourceMap": true
+    // "declarationDir": "../types"
   },
   "exclude": ["node_modules"]
 }
