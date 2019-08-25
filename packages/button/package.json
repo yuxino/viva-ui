@@ -4,8 +4,8 @@
   "description": "viva-ui button",
   "author": "yuxino <nbsawz@gmail.com>",
   "homepage": "https://github.com/yuxino/viva-ui#readme",
-  "license": "ISC",
-  "main": "dist/button.js",
+  "license": "MIT",
+  "main": "dist/index.js",
   "directories": {
     "dist": "dist",
     "test": "__tests__"

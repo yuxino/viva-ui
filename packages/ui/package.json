@@ -4,8 +4,8 @@
   "description": "the ui repo",
   "author": "yuxino <nbsawz@gmail.com>",
   "homepage": "https://github.com/yuxino/viva-ui/tree/master/packages/ui#readme",
-  "license": "ISC",
-  "main": "dist/ui.js",
+  "license": "MIT",
+  "main": "dist/index.js",
   "directories": {
     "dist": "dist",
     "test": "__tests__"

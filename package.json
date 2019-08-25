@@ -14,7 +14,10 @@
     "fs-extra": "^8.1.0",
     "lerna": "^3.16.4",
     "rollup": "^1.20.1",
-    "rollup-plugin-babel": "^4.3.3"
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-typescript": "^1.0.1",
+    "typescript": "^3.5.3",
+    "typings": "^2.1.1"
   },
   "peerDependencies": {
     "react": "^16.9.0",
@@ -22,6 +25,7 @@
   },
   "scripts": {
     "build": "rollup -c ./roullup.config.js",
+    "watch": "yarn build -- -w",
     "storybook": "start-storybook",
     "pub": "lerna publish -- --access public"
   },
@@ -39,7 +43,7 @@
     "url": "git+https://github.com/yuxino/viva-ui.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/yuxino/viva-ui/issues"
   },

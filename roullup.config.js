@@ -3,6 +3,7 @@ import path from "path";
 
 // rollup config
 import babel from "rollup-plugin-babel";
+import typescript from "rollup-plugin-typescript";
 
 const resolve = path.resolve;
 
@@ -15,16 +16,16 @@ const configBuilder = async () => {
     .map(pkgName => {
       const pkgDir = resolve(PACKAGE_PATH, pkgName);
       // input dir
-      const input = resolve(pkgDir, `lib/${pkgName}.ts`);
+      const input = resolve(pkgDir, `lib/index.ts`);
       // output config build
       const output = {
-        file: resolve(pkgDir, `dist/${pkgName}.js`),
+        file: resolve(pkgDir, `dist/index.js`),
         format: "cjs"
       };
       return {
         input,
         output,
-        plugins: [babel({ exclude: "node_modules/**" })]
+        plugins: [typescript(), babel({ exclude: "node_modules/**" })]
       };
     });
   return configs;
