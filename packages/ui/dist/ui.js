@@ -1,11 +1,13 @@
-'use strict';
+"use strict";
 
-function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
+Object.defineProperty(exports, "__esModule", { value: true });
 
-var test = _interopDefault(require('@viva-ui/alert'));
-
-function ui() {
-  test();
+function _interopDefault(ex) {
+  return ex && typeof ex === "object" && "default" in ex ? ex["default"] : ex;
 }
 
-module.exports = ui;
+var alert = _interopDefault(require("@viva-ui/alert"));
+var button = _interopDefault(require("@viva-ui/button"));
+
+exports.Alert = alert;
+exports.Button = button;

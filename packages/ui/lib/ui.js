@@ -1,6 +1,5 @@
 "use strict";
-import test from "@viva-ui/alert";
+import Alert from "@viva-ui/alert";
+import Button from "@viva-ui/button";
 
-export default function ui() {
-  test();
-}
+export { Alert, Button };
