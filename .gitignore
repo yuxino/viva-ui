@@ -4,6 +4,9 @@
 # Dist
 dist
 
+# Typescript
+types
+
 # roullup
 .rpt2_cache
 
