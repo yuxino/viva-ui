@@ -24,7 +24,7 @@
     "watch": "yarn build -- -w",
     "clean-build": "node ./scripts/clean-build",
     "storybook": "start-storybook",
-    "pub": "lerna publish -- --access public"
+    "pub": "yarn build && lerna publish -- --access public"
   },
   "dependencies": {
     "@storybook/react": "^5.1.11"
