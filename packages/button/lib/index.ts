@@ -1,6 +1,3 @@
-import Button, { LightButton } from "./button";
+import Button from "./button";
 
 export default Button;
-
-// expose
-export { LightButton };

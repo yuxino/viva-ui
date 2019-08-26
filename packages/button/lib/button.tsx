@@ -1,13 +1,6 @@
 import * as React from "react";
 
-class LightButton extends React.Component<{}, {}> {
-  render() {
-    return <div>hello world</div>;
-  }
-}
-
-export { LightButton };
-
+/** this is a cute button componet XD */
 export default ({ name }: { name: string }) => {
   return <button>hello {name} !!</button>;
 };
