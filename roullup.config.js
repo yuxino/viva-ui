@@ -2,6 +2,8 @@ import fs from "fs-extra";
 import path from "path";
 
 // rollup config
+// https://rollupjs.org/guide/en/#warning-treating-module-as-external-dependency
+import rollupResolve from "rollup-plugin-node-resolve";
 import typescript from "rollup-plugin-typescript2";
 
 const resolve = path.resolve;
@@ -25,7 +27,33 @@ const configBuilder = async () => {
       return {
         input,
         output,
-        plugins: [typescript()],
+        plugins: [
+          rollupResolve(),
+          typescript({
+            useTsconfigDeclarationDir: true,
+            tsconfigDefaults: {
+              compilerOptions: {
+                emitDecoratorMetadata: true,
+                experimentalDecorators: true,
+                forceConsistentCasingInFileNames: true,
+                jsx: "react",
+                module: "ES2015",
+                moduleResolution: "node",
+                preserveConstEnums: true,
+                target: "es5",
+                declaration: true,
+                sourceMap: true
+              },
+              exclude: ["node_modules"]
+            },
+            tsconfigOverride: {
+              compilerOptions: {
+                declarationDir: resolve(pkgDir, "types"),
+                include: [path.resolve(pkgDir, "lib/**/*.ts")]
+              }
+            }
+          })
+        ],
         external: ["react", "react-dom"]
       };
     });
