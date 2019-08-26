@@ -1,6 +1,6 @@
 {
   "name": "@viva-ui/button",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "viva-ui button",
   "author": "yuxino <nbsawz@gmail.com>",
   "homepage": "https://github.com/yuxino/viva-ui#readme",
@@ -27,6 +27,6 @@
   },
   "gitHead": "aabc03bdcf1e27787d112c1f9d1ac7023fa578d4",
   "dependencies": {
-    "@viva-ui/alert": "^1.0.5"
+    "@viva-ui/alert": "^1.0.6"
   }
 }
