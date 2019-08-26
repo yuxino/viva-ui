@@ -1,5 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import Button from "@viva-ui/button";
+import { Alert, Button } from "@viva-ui/ui";
 
+storiesOf("Alert", module).add("Basic", () => <Alert>123</Alert>);
 storiesOf("Button", module).add("Basic", () => <Button>123</Button>);

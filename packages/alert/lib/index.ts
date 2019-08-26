@@ -1,4 +1,3 @@
-// expose
-export default function() {
-  return "hello world";
-}
+import Alert from "./Alert";
+
+export default Alert;
