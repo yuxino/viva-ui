@@ -20,12 +20,17 @@ const configBuilder = async () => {
       // output config build
       const output = {
         file: resolve(pkgDir, `dist/index.js`),
-        format: "cjs"
+        format: "esm"
       };
       return {
         input,
         output,
-        plugins: [typescript(), commonjs()],
+        plugins: [
+          typescript(),
+          commonjs({
+            extensions: [".js", ".ts"]
+          })
+        ],
         external: ["react", "react-dom"]
       };
     });

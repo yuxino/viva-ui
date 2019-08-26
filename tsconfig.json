@@ -9,9 +9,8 @@
     // "noImplicitAny": true,
     "preserveConstEnums": true,
     "target": "es5",
-    // "declaration": true,
+    "declaration": true,
     "sourceMap": true
-    // "declarationDir": "../types"
   },
   "exclude": ["node_modules"]
 }

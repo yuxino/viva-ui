@@ -2,4 +2,4 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import Button from "../packages/button";
 
-storiesOf("Button", module).add("Basic", () => <Button></Button>);
+storiesOf("Button", module).add("Basic", () => <Button>123</Button>);

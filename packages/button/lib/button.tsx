@@ -1,5 +1,5 @@
 import * as React from "react";
 
-export default () => {
-  return <button>hello world !!</button>;
+export default ({ name }: { name: string }) => {
+  return <button>hello {name} !!</button>;
 };
