@@ -44,12 +44,12 @@ const configBuilder = async () => {
                 declaration: true,
                 sourceMap: true
               },
+              include: [path.resolve(pkgDir, "lib/**/*.ts")],
               exclude: ["node_modules"]
             },
             tsconfigOverride: {
               compilerOptions: {
-                declarationDir: resolve(pkgDir, "types"),
-                include: [path.resolve(pkgDir, "lib/**/*.ts")]
+                declarationDir: resolve(pkgDir, "types")
               }
             }
           })
