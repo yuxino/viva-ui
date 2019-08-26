@@ -7,7 +7,6 @@ module.exports = ({ config }) => {
       {
         loader: require.resolve("awesome-typescript-loader"),
         options: {
-          instance: "shit-man",
           configFileName: path.resolve(process.cwd(), "tsconfig.json")
         }
       }

@@ -1,2 +1,2 @@
-// import "./Alert";
-// import "./Button";
+import "./Alert";
+import "./Button";

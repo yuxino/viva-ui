@@ -31,24 +31,9 @@ const configBuilder = async () => {
           rollupResolve(),
           typescript({
             useTsconfigDeclarationDir: true,
-            tsconfigDefaults: {
-              compilerOptions: {
-                emitDecoratorMetadata: true,
-                experimentalDecorators: true,
-                forceConsistentCasingInFileNames: true,
-                jsx: "react",
-                module: "ES2015",
-                moduleResolution: "node",
-                preserveConstEnums: true,
-                target: "es5",
-                declaration: true,
-                sourceMap: true
-              },
-              include: [path.resolve(pkgDir, "lib/**/*.ts")],
-              exclude: ["node_modules"]
-            },
             tsconfigOverride: {
               compilerOptions: {
+                include: [path.resolve(pkgDir, "lib/**/*.ts")],
                 declarationDir: resolve(pkgDir, "types")
               }
             }
