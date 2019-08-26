@@ -2,7 +2,6 @@ import fs from "fs-extra";
 import path from "path";
 
 // rollup config
-import commonjs from "rollup-plugin-commonjs";
 import typescript from "rollup-plugin-typescript2";
 
 const resolve = path.resolve;
@@ -20,17 +19,13 @@ const configBuilder = async () => {
       // output config build
       const output = {
         file: resolve(pkgDir, `dist/index.js`),
-        format: "esm"
+        format: "esm",
+        sourcemap: true
       };
       return {
         input,
         output,
-        plugins: [
-          typescript(),
-          commonjs({
-            extensions: [".js", ".ts"]
-          })
-        ],
+        plugins: [typescript()],
         external: ["react", "react-dom"]
       };
     });
