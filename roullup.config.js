@@ -17,7 +17,7 @@ const configBuilder = async () => {
     .map(pkgName => {
       const pkgDir = resolve(PACKAGE_PATH, pkgName);
       // input dir
-      const input = resolve(pkgDir, `lib/index.ts`);
+      const input = resolve(pkgDir, `src/index.ts`);
       // output config build
       const output = {
         file: resolve(pkgDir, `dist/index.js`),
@@ -33,9 +33,9 @@ const configBuilder = async () => {
             useTsconfigDeclarationDir: true,
             tsconfigOverride: {
               compilerOptions: {
-                include: [path.resolve(pkgDir, "lib/**/*.ts")],
                 declarationDir: resolve(pkgDir, "types")
-              }
+              },
+              include: [path.resolve(pkgDir, "src/**/*.ts")]
             }
           })
         ],
