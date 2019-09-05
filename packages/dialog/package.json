@@ -24,5 +24,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@viva-ui/shared": "^1.0.1"
   }
 }
