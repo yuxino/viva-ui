@@ -7,13 +7,14 @@ import rollupResolve from "rollup-plugin-node-resolve";
 import typescript from "rollup-plugin-typescript2";
 
 const resolve = path.resolve;
+const EXCLUDE_PKG = [".DS_Store", "__template__"];
 
 // generate rollup config to build components
 const configBuilder = async () => {
   const PACKAGE_PATH = resolve(__dirname, "packages");
   const pkgs = await fs.readdir(PACKAGE_PATH);
   const configs = pkgs
-    .filter(pkgName => pkgName !== "story-book")
+    .filter(pkgName => !EXCLUDE_PKG.includes(pkgName))
     .map(pkgName => {
       const pkgDir = resolve(PACKAGE_PATH, pkgName);
       // input dir
