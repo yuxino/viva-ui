@@ -1,6 +1,6 @@
 import * as React from "react";
+import { useState } from "react";
 
-/** this is a cute button componet XD */
-export default ({ name }: { name: string }) => {
-  return <button>hello {name} !!</button>;
+export default () => {
+  return <button>hello !!</button>;
 };

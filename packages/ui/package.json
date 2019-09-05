@@ -26,7 +26,8 @@
   },
   "dependencies": {
     "@viva-ui/alert": "^1.0.7",
-    "@viva-ui/button": "^1.0.7"
+    "@viva-ui/button": "^1.0.7",
+    "@viva-ui/dialog": "^1.0.0"
   },
   "gitHead": "aabc03bdcf1e27787d112c1f9d1ac7023fa578d4"
 }
