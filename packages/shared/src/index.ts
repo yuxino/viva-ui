@@ -1,3 +1,5 @@
 "use strict";
 
-export default () => {};
+import Emitter from "./emitter";
+
+export { Emitter };
