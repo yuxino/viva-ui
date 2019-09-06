@@ -11,23 +11,7 @@ import sass from "node-sass";
 const resolve = path.resolve;
 const EXCLUDE_PKG = [".DS_Store", "__template__"];
 
-const processSass = function(context) {
-  return new Promise((resolve, reject) => {
-    sass.render(
-      {
-        file: context
-      },
-      function(err, result) {
-        if (!err) {
-          resolve(result);
-        } else {
-          reject(err);
-        }
-      }
-    );
-  });
-};
-
+// typescript config
 const tsConfig = pkgDir => ({
   plugins: [
     rollupResolve(),
@@ -44,11 +28,33 @@ const tsConfig = pkgDir => ({
   external: ["react", "react-dom"]
 });
 
+// scss config
+const processSass = function(context) {
+  return new Promise((resolve, reject) => {
+    sass.renderSync(
+      {
+        file: context,
+        sourceMap: true
+        // not working ... ???
+        // outputStyle: "expanded"
+      },
+      function(err, result) {
+        if (!err) {
+          resolve(result);
+        } else {
+          reject(err);
+        }
+      }
+    );
+  });
+};
+
+// scss config
 const scssConfig = () => ({
   plugins: [
     postcss({
       extract: true,
-      // minimize: isProductionEnv,
+      minimize: false,
       extensions: ["scss"],
       process: processSass
     })
@@ -75,7 +81,6 @@ const configBuilder = async () => {
         format: "esm",
         sourcemap: true
       };
-      console.log(pkgName, scssConfig());
       return {
         input,
         output,
