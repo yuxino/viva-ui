@@ -1,16 +1,3 @@
-@import "./mixins//bem.scss";
+@import "./mixins/bem.scss";
 
-@include b(card) {
-  color: red;
-  color: pink;
-
-  @include e(header) {
-    color: pink;
-  }
-
-  @include m(active) {
-    &:hover {
-      color: green;
-    }
-  }
-}
+@import "./components/dialog.scss";
