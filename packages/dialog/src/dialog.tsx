@@ -1,6 +1,7 @@
 import * as React from "react";
 import { useState } from "react";
 import { Emitter } from "@viva-ui/shared";
+import "../styles/index.scss";
 
 const emitter = new Emitter();
 
@@ -14,7 +15,7 @@ const Dialog = () => {
     setComp(<Component />);
   });
   emitter.on("closeDialog", () => setVisiable(false));
-  return visiable ? comp : null;
+  return visiable ? <div className="div">{comp}</div> : null;
 };
 
 const openDialog = component => emitter.emit("openDialog", component);
