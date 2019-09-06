@@ -1,5 +1,5 @@
 import { configure } from "@storybook/react";
-import "@viva-ui/ui/dist/index.css";
+import "@viva-ui/theme";
 
 function loadStories() {
   require("../stories/index.ts");

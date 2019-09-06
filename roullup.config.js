@@ -9,9 +9,9 @@ import postcss from "rollup-plugin-postcss";
 import sass from "node-sass";
 
 const resolve = path.resolve;
-const EXCLUDE_PKG = [".DS_Store", "__template__", "shared"];
+const EXCLUDE_PKG = [".DS_Store", "__template__"];
 
-const processSass = function(context, payload) {
+const processSass = function(context) {
   return new Promise((resolve, reject) => {
     sass.render(
       {
@@ -28,6 +28,33 @@ const processSass = function(context, payload) {
   });
 };
 
+const tsConfig = pkgDir => ({
+  plugins: [
+    rollupResolve(),
+    typescript({
+      useTsconfigDeclarationDir: true,
+      tsconfigOverride: {
+        compilerOptions: {
+          declarationDir: resolve(pkgDir, "types")
+        },
+        include: [path.resolve(pkgDir, "src/**/*.ts")]
+      }
+    })
+  ],
+  external: ["react", "react-dom"]
+});
+
+const scssConfig = () => ({
+  plugins: [
+    postcss({
+      extract: true,
+      // minimize: isProductionEnv,
+      extensions: ["scss"],
+      process: processSass
+    })
+  ]
+});
+
 // generate rollup config to build components
 const configBuilder = async () => {
   const PACKAGE_PATH = resolve(__dirname, "packages");
@@ -36,37 +63,23 @@ const configBuilder = async () => {
   const configs = pkgs
     .filter(pkgName => !EXCLUDE_PKG.includes(pkgName))
     .map(pkgName => {
+      const isTheme = pkgName === "theme";
+      const iExt = isTheme ? "scss" : "ts";
+      const oExt = isTheme ? "css" : "js";
       const pkgDir = resolve(PACKAGE_PATH, pkgName);
       // input dir
-      const input = resolve(pkgDir, `src/index.ts`);
+      const input = resolve(pkgDir, `src/index.${iExt}`);
       // output config build
       const output = {
-        file: resolve(pkgDir, `dist/index.js`),
+        file: resolve(pkgDir, `dist/index.${oExt}`),
         format: "esm",
         sourcemap: true
       };
+      console.log(pkgName, scssConfig());
       return {
         input,
         output,
-        plugins: [
-          postcss({
-            extract: true,
-            // minimize: isProductionEnv,
-            extensions: ["scss"],
-            process: processSass
-          }),
-          rollupResolve(),
-          typescript({
-            useTsconfigDeclarationDir: true,
-            tsconfigOverride: {
-              compilerOptions: {
-                declarationDir: resolve(pkgDir, "types")
-              },
-              include: [path.resolve(pkgDir, "src/**/*.ts")]
-            }
-          })
-        ],
-        external: ["react", "react-dom"]
+        ...(isTheme ? scssConfig() : tsConfig(pkgDir))
       };
     });
   return configs;

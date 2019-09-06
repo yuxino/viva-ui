@@ -1,7 +1,6 @@
 import * as React from "react";
 import { useState } from "react";
 import { Emitter } from "@viva-ui/shared";
-import "../styles/index.scss";
 
 const emitter = new Emitter();
 

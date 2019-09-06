@@ -24,6 +24,7 @@
     "react-dom": "^16.9.0"
   },
   "scripts": {
+    "bootstrap": "lerna bootstrap",
     "build": "rollup -c ./roullup.config.js",
     "watch": "yarn build -w",
     "clean-build": "node ./scripts/clean-build",
