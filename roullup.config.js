@@ -80,7 +80,7 @@ const configBuilder = async () => {
       // output config build
       const output = {
         file: resolve(pkgDir, `dist/index.${oExt}`),
-        format: "cjs",
+        format: process.env.NODE_EV === "production" ? "cjs" : "esm",
         sourcemap: true
       };
       return {

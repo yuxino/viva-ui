@@ -1,6 +1,6 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
-import { Dialog, openDialog, closeDialog } from "../packages/ui";
+import { Dialog, openDialog, closeDialog } from "@viva-ui/ui";
 
 storiesOf("Dialog", module).add("Basic", () => {
   const style = {
