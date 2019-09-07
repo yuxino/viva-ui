@@ -4,6 +4,7 @@ import path from "path";
 // rollup config
 // https://rollupjs.org/guide/en/#warning-treating-module-as-external-dependency
 import rollupResolve from "rollup-plugin-node-resolve";
+import commonjs from "rollup-plugin-commonjs";
 import typescript from "rollup-plugin-typescript2";
 import postcss from "rollup-plugin-postcss";
 import sass from "node-sass";
@@ -15,6 +16,7 @@ const EXCLUDE_PKG = [".DS_Store", "__template__"];
 const tsConfig = pkgDir => ({
   plugins: [
     rollupResolve(),
+    commonjs(),
     typescript({
       useTsconfigDeclarationDir: true,
       tsconfigOverride: {
@@ -78,7 +80,7 @@ const configBuilder = async () => {
       // output config build
       const output = {
         file: resolve(pkgDir, `dist/index.${oExt}`),
-        format: "esm",
+        format: "cjs",
         sourcemap: true
       };
       return {
