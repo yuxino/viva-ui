@@ -30,7 +30,7 @@
     "watch": "yarn build -w",
     "clean-build": "node ./scripts/clean-build",
     "storybook": "start-storybook",
-    "pub": "yarn build && lerna publish -- --access public",
+    "pub": "cross-env NODE_ENV=production yarn build && lerna publish -- --access public",
     "test": "lerna run --scope @viva-ui/shared test"
   },
   "dependencies": {
