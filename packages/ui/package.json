@@ -1,6 +1,6 @@
 {
   "name": "@viva-ui/ui",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "the ui repo",
   "author": "yuxino <nbsawz@gmail.com>",
   "homepage": "https://github.com/yuxino/viva-ui/tree/master/packages/ui#readme",
@@ -25,9 +25,9 @@
     "url": "https://github.com/yuxino/viva-ui/issues"
   },
   "dependencies": {
-    "@viva-ui/alert": "^1.0.7",
-    "@viva-ui/button": "^1.0.7",
-    "@viva-ui/dialog": "^1.0.0"
+    "@viva-ui/alert": "^1.0.8",
+    "@viva-ui/button": "^1.0.8",
+    "@viva-ui/dialog": "^1.0.1"
   },
   "gitHead": "aabc03bdcf1e27787d112c1f9d1ac7023fa578d4"
 }
