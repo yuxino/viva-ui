@@ -10,24 +10,19 @@
   pointer-events: none;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
-  @include e(close) {
-    position: absolute;
-    right: 10px;
-    top: -3px;
-    font-size: 15px;
-  }
-
   @include e(box) {
     width: 400px;
     position: relative;
     border-radius: 4px;
     border: 1px solid #9894944d;
     box-shadow: 5px 5px 5px 1px #00000011;
+    pointer-events: all;
   }
 
   @include e(title) {
     text-align: center;
     border-bottom: 1px solid #9894944d;
     padding: 6px 0px;
+    user-select: none;
   }
 }
