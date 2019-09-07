@@ -1,6 +1,6 @@
 {
   "name": "@viva-ui/dialog",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "viva-ui dialog",
   "author": "yuxino <nbsawz@gmail.com>",
   "homepage": "https://github.com/yuxino/viva-ui#readme",
@@ -27,6 +27,6 @@
     "access": "public"
   },
   "dependencies": {
-    "@viva-ui/shared": "^1.0.2"
+    "@viva-ui/shared": "^1.0.3"
   }
 }
