@@ -33,7 +33,8 @@ const Dialog = ({ title }: DialogProps) => {
   useEffect(() => {
     if (ref) {
       const event = e => {
-        const clickNoInCurrent = !ref.current.contains(e.target);
+        const clickNoInCurrent =
+          ref && ref.current && !ref.current.contains(e.target);
         visiable && clickNoInCurrent && closeDialog();
       };
       document.addEventListener("click", event);
