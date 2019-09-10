@@ -26,7 +26,7 @@
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "build": "rollup -c ./roullup.config.js",
+    "build": "rollup -c ./rollup.config.js",
     "watch": "yarn build -w",
     "clean-build": "node ./scripts/clean-build",
     "storybook": "start-storybook",
