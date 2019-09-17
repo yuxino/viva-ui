@@ -7,7 +7,8 @@
     "publish": {
       "publishConfig": {
         "access": "public"
-      }
+      },
+      "message": "chore(release): publish"
     }
   }
 }
