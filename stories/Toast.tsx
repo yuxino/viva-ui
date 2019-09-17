@@ -1,12 +1,23 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
-import { Toast } from "@viva-ui/ui";
+import { showToast } from "@viva-ui/ui";
 
-storiesOf("Toast", module).add("Basic", () => (
-  <>
-    <Toast type="nomarl">The Evil Rabbit jumped over the fence</Toast>
-    <Toast type="success">The Evil Rabbit jumped over the fence</Toast>
-    <Toast type="warning">The Evil Rabbit jumped over the fence</Toast>
-    <Toast type="error">The Evil Rabbit jumped over the fence</Toast>
-  </>
-));
+storiesOf("Toast", module).add("Basic", () => {
+  return (
+    <>
+      <button onClick={() => showToast({ children: "hello world" })}>
+        nomarl
+      </button>
+      <button
+        onClick={() => showToast({ children: "hello world", type: "success" })}
+      >
+        success
+      </button>
+      <button
+        onClick={() => showToast({ children: "hello world", type: "warning" })}
+      >
+        warning
+      </button>
+    </>
+  );
+});

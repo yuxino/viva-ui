@@ -2,10 +2,10 @@
 import Alert from "@viva-ui/alert";
 import Button from "@viva-ui/button";
 import Dialog, { openDialog, closeDialog } from "@viva-ui/dialog";
-import Toast from "@viva-ui/toast";
+import { showToast } from "@viva-ui/toast";
 
 // main export
-export { Alert, Button, Dialog, Toast };
+export { Alert, Button, Dialog };
 
 // function export
-export { openDialog, closeDialog };
+export { openDialog, closeDialog, showToast };
