@@ -1,7 +1,7 @@
 {
-  "name": "@viva-ui/template",
+  "name": "@viva-ui/toast",
   "version": "1.0.0",
-  "description": "viva-ui template",
+  "description": "viva-ui toast",
   "author": "yuxino <nbsawz@gmail.com>",
   "homepage": "https://github.com/yuxino/viva-ui#readme",
   "license": "MIT",
