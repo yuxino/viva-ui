@@ -35,7 +35,8 @@
     "test": "lerna run --scope @viva-ui/shared test"
   },
   "dependencies": {
-    "@storybook/react": "^5.1.11"
+    "@storybook/react": "^5.1.11",
+    "classnames": "^2.2.6"
   },
   "description": "",
   "version": "1.0.0",

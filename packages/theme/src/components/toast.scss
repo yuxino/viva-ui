@@ -1,0 +1,35 @@
+@include b(toast) {
+  border-radius: 5px;
+  width: 450px;
+  text-align: center;
+  padding: 14px 0px;
+  top: 20px;
+  left: 50%;
+  position: fixed;
+  margin-left: -300px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.12);
+  margin-bottom: 10px;
+
+  @include m(nomarl) {
+    background: #ffffff;
+    color: black;
+  }
+
+  @include m(success) {
+    background: $success-color;
+    color: #ffffff;
+  }
+
+  @include m(warning) {
+    background: $warning-color;
+    color: #ffffff;
+  }
+
+  @include m(error) {
+    background: $error-color;
+    color: #ffffff;
+  }
+}
