@@ -28,7 +28,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "rollup -c ./rollup.config.js",
-    "watch": "yarn build -w",
+    "watch": "yarn clean-build & yarn bootstrap & yarn build -w",
     "clean-build": "node ./scripts/clean-build",
     "storybook": "start-storybook -p 9001",
     "pub": "cross-env NODE_ENV=production yarn build && lerna publish -- --access public",

@@ -16,7 +16,8 @@
     $currentSelector: #{$currentSelector +
       "." +
       $B +
-      $element-separator +
+      element-separator
+      $ +
       $unit +
       ","};
   }
