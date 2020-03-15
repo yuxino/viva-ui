@@ -5,8 +5,8 @@ import { Dialog, openDialog, closeDialog } from "@viva-ui/ui";
 storiesOf("Dialog", module).add("Basic", () => {
   const style = {
     body: {
-      padding: 25,
-      textAlign: "center"
+      padding: 25
+      // textAlign: "center"
     },
     p: {
       margin: 0,

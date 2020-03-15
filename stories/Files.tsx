@@ -95,6 +95,4 @@ function searchItemById(tree, id) {
 
 const menuTree = serialize(menus);
 
-storiesOf("Files", module).add("Basic", () => (
-  <Files onChange={() => {}} menus={menuTree}></Files>
-));
+storiesOf("Files", module).add("Basic", () => <Files></Files>);

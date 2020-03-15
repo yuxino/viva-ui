@@ -28,7 +28,7 @@ const closeDialog = () => emitter.emit("closeDialog");
 const Dialog = ({ title }: DialogProps) => {
   const [visiable, component] = useDialog();
 
-  const ref = useRef();
+  const ref = useRef<HTMLDivElement>();
 
   useEffect(() => {
     if (ref) {

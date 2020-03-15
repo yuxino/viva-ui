@@ -1,5 +1,5 @@
 import * as React from "react";
 
-export default () => {
-  return <div>hello wrold</div>;
+export default ({ children }) => {
+  return <div>{children}</div>;
 };
