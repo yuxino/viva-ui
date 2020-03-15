@@ -30,12 +30,10 @@
     "build": "rollup -c ./rollup.config.js",
     "watch": "yarn clean-build && yarn bootstrap && yarn build -w",
     "clean-build": "node ./scripts/clean-build",
-    "storybook": "start-storybook -p 9001",
     "pub": "cross-env NODE_ENV=production yarn build && lerna publish -- --access public",
     "test": "lerna run --scope @viva-ui/shared test"
   },
   "dependencies": {
-    "@storybook/react": "^5.1.11",
     "classnames": "^2.2.6"
   },
   "description": "",

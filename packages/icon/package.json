@@ -1,7 +1,7 @@
 {
-  "name": "@viva-ui/files",
-  "version": "1.0.0",
-  "description": "viva-ui files",
+  "name": "@viva-ui/icon",
+  "version": "1.0.4",
+  "description": "viva-ui icon",
   "author": "yuxino <nbsawz@gmail.com>",
   "homepage": "https://github.com/yuxino/viva-ui#readme",
   "license": "MIT",
@@ -25,6 +25,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dependencies": {}
+  }
 }

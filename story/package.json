@@ -1,0 +1,13 @@
+{
+  "name": "story",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "yuxino",
+  "license": "MIT",
+  "scripts": {
+    "storybook": "start-storybook -p 9001"
+  },
+  "devDependencies": {
+    "@storybook/react": "^5.3.17"
+  }
+}
